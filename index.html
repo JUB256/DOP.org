@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DOP - Department of Possibility</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Keep only one Feather icons script -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-black text-white">
+<style>
+  nav {
+    height: 100px; /* or any height you want */
+  }
+</style>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black z-50 border-b border-yellow-500">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+             <img src="img/dop logo.png" alt="DOP Logo" class="h-8 w-auto" style="width:120px; height: 120px;" />
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-white hover:text-yellow-500">Home</a>
+                <a href="about.html" class="text-white hover:text-yellow-500">About Us</a>
+                <a href="work.html" class="text-white hover:text-yellow-500">Our Work</a>
+                <a href="testimonials.html" class="text-white hover:text-yellow-500">Testimonials</a>
+                <a href="contact.html" class="text-white hover:text-yellow-500">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-btn" aria-label="Toggle menu">
+                <i data-feather="menu" class="text-white"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden bg-black w-full px-6 py-3" id="mobile-menu">
+            <a href="index.html" class="block py-2 text-white hover:text-yellow-500">Home</a>
+            <a href="about.html" class="block py-2 text-white hover:text-yellow-500">About Us</a>
+            <a href="work.html" class="block py-2 text-white hover:text-yellow-500">Our Work</a>
+            <a href="testimonials.html" class="block py-2 text-white hover:text-yellow-500">Testimonials</a>
+            <a href="contact.html" class="block py-2 text-white hover:text-yellow-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-yellow-500">Department of <span class="text-red-600">Possibility</span></h1>
+                <p class="text-xl mb-8">To empower communities by promoting health equity, advancing climate resilience, and fostering sustainable livelihoods through innovative programs, collaborative partnerships, and evidence-based solutions that create lasting impacts for people and the community.</p>
+                <div class="flex space-x-4">
+                    <a href="about.html" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded">Learn More</a>
+                    <a href="contact.html" class="border-2 border-yellow-500 hover:bg-yellow-500 hover:text-black text-yellow-500 font-bold py-3 px-6 rounded">Contact Us</a>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="img/Team.jpeg" alt="Community members" class="rounded-lg shadow-2xl border-2 border-yellow-500" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="py-16 bg-red-600">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Our Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6" data-aos="fade-up">
+                    <div class="text-5xl font-bold text-yellow-500 mb-2">4,178+</div>
+                    <div class="text-xl text-white">Individuals Supported</div>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl font-bold text-yellow-500 mb-2">10,000+</div>
+                    <div class="text-xl text-white">Trees Planted</div>
+                </div>
+                <div class="p-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-5xl font-bold text-yellow-500 mb-2">50+</div>
+                    <div class="text-xl text-white">Projects Completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Areas -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-yellow-500">Our Focus Areas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-6 rounded-lg border-l-4 border-yellow-500" data-aos="fade-up">
+                    <div class="text-red-600 mb-4">
+                        <i data-feather="heart" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Public Health</h3>
+                    <p class="text-gray-300">Raising awareness about health issues and improving access to essential health services and information.</p>
+                    <a href="work.html#health" class="mt-4 inline-block text-yellow-500 hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg border-l-4 border-yellow-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-red-600 mb-4">
+                        <i data-feather="sun" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">	Climate Change Interventions</h3>
+                    <p class="text-gray-300">Addressing the impacts of climate change by promoting sustainable agricultural practices and community resilience and encouraging environmentally responsible practices that promote economic growth and protect the ecosystem.</p>
+                    <a href="work.html#climate" class="mt-4 inline-block text-yellow-500 hover:underline">Learn more →</a>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg border-l-4 border-yellow-500" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-red-600 mb-4">
+                        <i data-feather="briefcase" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Sustainable Livelihoods</h3>
+                    <p class="text-gray-300">Empowering individuals and groups through economic opportunities, with a focus on self-reliance and long-term prosperity.</p>
+                    <a href="work.html#livelihood" class="mt-4 inline-block text-yellow-500 hover:underline">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-red-600 to-yellow-500">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-white">Join Us in Creating Possibilities</h2>
+            <p class="text-xl mb-8 text-white max-w-2xl mx-auto">Your support can help transform lives in Nakivale Refugee Settlement.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="contact.html" class="bg-black hover:bg-gray-900 text-white font-bold py-3 px-6 rounded">Donate</a>
+                <a href="contact.html" class="bg-white hover:bg-gray-100 text-black font-bold py-3 px-6 rounded">Volunteer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="img/dp.png" alt="DOP Logo" class="h-8 w-auto"style="width:120px; height: 120px;">
+                    <p class="text-gray-400">Creating opportunities for dignity, resilience, and sustainable development.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-yellow-500">About Us</a></li>
+                        <li><a href="work.html" class="text-gray-400 hover:text-yellow-500">Our Work</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-yellow-500">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-white">Our Work</h4>
+                    <ul class="space-y-2">
+                        <li><a href="work.html#health" class="text-gray-400 hover:text-yellow-500">Public Health</a></li>
+                        <li><a href="work.html#climate" class="text-gray-400 hover:text-yellow-500">Climate Change Intervations</a></li>
+                        <li><a href="work.html#livelihood" class="text-gray-400 hover:text-yellow-500">Sustainable Livelihood</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-white">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l focus:outline-none text-black" />
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-r">
+                            <i data-feather="send"></i>
+                        </button>
+                    </form>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500"><i data-feather="instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+              <!-- Partners Section -->
+            <div class="mt-12">
+                <h4 class="text-lg font-bold mb-6 text-center text-white">Our Partners</h4>
+                <div class="flex flex-wrap justify-center items-center gap-6">
+                    <img src="img/mayanja.jpg" alt="Partner 1" class="h-16 object-contain" />
+                    <img src="img/care.png" alt="Partner 2" class="h-16 object-contain" />
+                    <img src="img/taso.jpg" alt="Partner 3" class="h-16 object-contain" />
+                    <img src="img/forall.png" alt="Partner 4" class="h-16 object-contain" />
+                    <img src="img/action.png" alt="Partner 5" class="h-16 object-contain" />
+                    <img src="img/igon.png" alt="Partner 6" class="h-16 object-contain" />
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Department of Possibility. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+        feather.replace();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
